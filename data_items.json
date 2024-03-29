@@ -1,0 +1,67 @@
+[
+    {
+      "clothes_name": "Men's Denim Jacket",
+      "gender": "Male",
+      "category": "Jackets",
+      "retailer": "Zara",
+      "brand": "DenimCo",
+      "description": "Classic denim jacket for men",
+      "link": "src/path"
+    },
+    {
+      "clothes_name": "Women's Denim Jacket",
+      "gender": "Female",
+      "category": "Jackets",
+      "retailer": "Zara",
+      "brand": "DenimCo",
+      "description": "Classic denim jacket for women",
+      "link": "src/path"
+    },
+    {
+      "clothes_name": "Men's skinny jeans",
+      "gender": "Male",
+      "category": "Jeans",
+      "retailer": "Uniqlo",
+      "brand": "DenimCo",
+      "description": "Skinny jeans for men",
+      "link": "src/path"
+    },
+    {
+      "clothes_name": "Air Jordans",
+      "gender": "Unisex",
+      "category": "Shoes",
+      "retailer": "Nike",
+      "brand": "Jordan",
+      "description": "Classic Air Jordans",
+      "link": "src/path"
+    },
+    {
+      "clothes_name": "Men's Running Jacket",
+      "gender": "Male",
+      "category": "Jackets",
+      "retailer": "Lining",
+      "brand": "DenimCo",
+      "description": "Classic denim jacket for men",
+      "link": "src/path"
+    },
+    {
+      "clothes_name": "Men's black long-sleeve t-shirt",
+      "gender": "Male",
+      "category": "T-shirt",
+      "retailer": "Walmart",
+      "brand": "Uniqlo",
+      "description": "Classic long-sleeved t-shirt for men",
+      "link": "src/path"
+    },
+    {
+      "clothes_name": "Women's black long-sleeve t-shirt",
+      "gender": "Female",
+      "category": "T-shirt",
+      "retailer": "Walmart",
+      "brand": "Uniqlo",
+      "description": "Classic long-sleeved t-shirt for women",
+      "link": "src/path"
+    }
+    
+  ]
+  
