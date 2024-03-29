@@ -6,7 +6,7 @@ const knnGraph = buildKNNGraph();
 
 function calculateEuclideanDistance(clothes1, clothes2) {
     //TODO
-    const attributesToCompare = ['clothes_name', 'gender','category', 'retailer', 'brand'];
+    const attributesToCompare = ['clothes_name', 'gender','category', 'retailerName', 'brand'];
     let sigma = 0;
     for(const attribute of attributesToCompare) {
         if(attribute === 'clothes_name') {
@@ -75,3 +75,5 @@ const nearestNeighbors = getKNearestNeighbors(selectedClothesIndex, k)
 // console.log(nearestNeighbors);
 
 module.exports = {nearestNeighbors};
+
+// create an interface
