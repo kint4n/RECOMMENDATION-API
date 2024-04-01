@@ -1,3 +1,8 @@
+const fs = require('fs');
+
+const dataset_clothes = JSON.parse(fs.readFileSync('data_items.json'));
+
+
 function calculateEuclideanDistance(clothes1, clothes2) {
     //TODO
     const attributesToCompare = ['clothes_name', 'gender','category', 'retailerName', 'brand'];
@@ -49,16 +54,45 @@ function buildKNNGraph(data_clothes) {
     return knnGraph;
 }
 
+function findIndexesByClothesID(requestData) {
+    const indexes = [];
+    for (let i = 0; i < dataset_clothes.length; i++) {
+        for(let j = 0; j < requestData.length; j++)
+        if (dataset_clothes[i].clothes_ID === requestData[j].clothes_ID) {
+            indexes.push(i); // Add index to array if found
+        }
+    }
+    return indexes; // Return array of indexes
+}
+
 // Returns KNearestNeighbors of selected clothing   
-function getKNearestNeighbors(requestData, selectedClothesIndex) {
-    const knnGraph = buildKNNGraph(requestData);
+function getKNearestNeighbors(requestData) {
+    const knnGraph = buildKNNGraph(dataset_clothes);
+
+    const indexes = findIndexesByClothesID(requestData);
+    console.log(indexes);
     
     const nearestNeighbors = [];
-    knnGraph[selectedClothesIndex].forEach(item => {
-        nearestNeighbors.push(requestData[item.clothes_index].clothes_ID);
-        // console.log(nearestNeighbors);
-    });
-    return nearestNeighbors;
+
+    // If shopping cart is empty
+    if(indexes.length === 0) {
+        return dataset_clothes;
+    }
+    // If 1 item in shopping cart
+    else if(indexes.length === 1) {
+        knnGraph[indexes[0]].forEach(item => {
+            nearestNeighbors.push(dataset_clothes[item.clothes_index].clothes_ID);
+        });
+        return nearestNeighbors;
+    }
+    else {
+        for(let i = 0; i < indexes.length; i++) {
+            knnGraph[indexes[i]].forEach(item => {
+                nearestNeighbors.push(dataset_clothes[item.clothes_index].clothes_ID);
+            });
+        }
+        return nearestNeighbors;
+    }
 
 }
 

@@ -13,7 +13,7 @@ app.post('/api/recommendationdata', (req, res) => {
     try {
         const requestData = req.body;
 
-        const recommendation = recommendationLogic.getKNearestNeighbors(requestData, 5);
+        const recommendation = recommendationLogic.getKNearestNeighbors(requestData);
         // Send response
         res.status(200).json(recommendation);
 
