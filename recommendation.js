@@ -1,9 +1,3 @@
-const fs = require('fs');
-
-const data_clothes = JSON.parse(fs.readFileSync('data_items.json'));
-
-const knnGraph = buildKNNGraph();
-
 function calculateEuclideanDistance(clothes1, clothes2) {
     //TODO
     const attributesToCompare = ['clothes_name', 'gender','category', 'retailerName', 'brand'];
@@ -21,15 +15,15 @@ function calculateEuclideanDistance(clothes1, clothes2) {
         }
         else {
             // If attributes are the same 0, else +1 (The smaller the value, the similar the items)
-            sigma += Math.pow(clothes1[attribute].toLowerCase() === clothes2[attribute].toLowerCase() ? 0 : 1, 2);
+            // sigma += Math.pow(clothes1[attribute].toLowerCase() === clothes2[attribute].toLowerCase() ? 0 : 1, 2);
+            sigma += Math.pow(clothes1[attribute] === clothes2[attribute] ? 0 : 1, 2);
         }     
     }
     const euclideanDistance = Math.sqrt(sigma);
     return euclideanDistance;
 }
 
-function buildKNNGraph() {
-    //TODO
+function buildKNNGraph(data_clothes) {
     const knnGraph = {};
 
     for(const clothesIndex1 in data_clothes) {
@@ -56,24 +50,16 @@ function buildKNNGraph() {
 }
 
 // Returns KNearestNeighbors of selected clothing   
-function getKNearestNeighbors(selectedClothesIndex, k) {
-    //TODO
+function getKNearestNeighbors(requestData, selectedClothesIndex) {
+    const knnGraph = buildKNNGraph(requestData);
+    
     const nearestNeighbors = [];
-    knnGraph[selectedClothesIndex].slice(0, k).forEach(item => {
-        nearestNeighbors.push(data_clothes[item.clothes_index]);
+    knnGraph[selectedClothesIndex].forEach(item => {
+        nearestNeighbors.push(requestData[item.clothes_index].clothes_ID);
         // console.log(nearestNeighbors);
     });
     return nearestNeighbors;
 
 }
 
-// Testing scenario
-const k = 5;
-const selectedClothesIndex = 5;
-
-const nearestNeighbors = getKNearestNeighbors(selectedClothesIndex, k)
-// console.log(nearestNeighbors);
-
-module.exports = {nearestNeighbors};
-
-// create an interface
+module.exports = {getKNearestNeighbors};

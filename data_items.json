@@ -7,7 +7,8 @@
       "brand": "DenimCo",
       "price": 200,
       "gender": "Male",
-      "link": "src/path"
+      "link": "src/path",
+      "clothes_ID": "01127_00"
     },
     {
       "clothes_name": "Women's Denim Jacket",
@@ -17,7 +18,8 @@
       "brand": "DenimCo",
       "price": 200,
       "gender": "Female",
-      "link": "src/path"
+      "link": "src/path",
+      "clothes_ID": "06322_00"
     },
     {
       "clothes_name": "Men's skinny jeans",
@@ -27,7 +29,8 @@
       "brand": "DenimCo",
       "price": 200,
       "gender": "Male",
-      "link": "src/path"
+      "link": "src/path",
+      "clothes_ID": "00007_00"
     },
     {
       "clothes_name": "Air Jordans",
@@ -37,7 +40,8 @@
       "brand": "Jordan",
       "price": 200,
       "gender": "Unisex",
-      "link": "src/path"
+      "link": "src/path",
+      "clothes_ID": "01172_00"
     },
     {
       "clothes_name": "Men's Running Jacket",
@@ -47,7 +51,8 @@
       "brand": "DenimCo",
       "price": 200,
       "gender": "Male",
-      "link": "src/path"
+      "link": "src/path",
+      "clothes_ID": "01214_00"
     },
     {
       "clothes_name": "Men's black long-sleeve t-shirt",
@@ -57,7 +62,8 @@
       "brand": "Uniqlo",
       "price": 200,
       "gender": "Male",
-      "link": "src/path"
+      "link": "src/path",
+      "clothes_ID": "02299_00"
     },
     {
       "clothes_name": "Women's black long-sleeve t-shirt",
@@ -67,7 +73,8 @@
       "brand": "Uniqlo",
       "price": 200,
       "gender": "Female",
-      "link": "src/path"
+      "link": "src/path",
+      "clothes_ID": "06211_00"
     }
     
   ]

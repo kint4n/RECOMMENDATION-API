@@ -6,21 +6,24 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const { nearestNeighbors} = require('./recommendation.js');
 
-app.post('/api/formdata', (req, res) => { 
+const recommendationLogic = require('./recommendation.js');
 
-    console.log(req.body);
+app.post('/api/recommendationdata', (req, res) => { 
+    try {
+        const requestData = req.body;
 
-    res.send('Recieved data');
+        const recommendation = recommendationLogic.getKNearestNeighbors(requestData, 5);
+        // Send response
+        res.status(200).json(recommendation);
+
+    } catch (error) {
+        res.status(500).send('Internal server error');
+    }
 })
 
-// app.get('/', (req, res) => {
-//     res.send("Hello World");
-// })
-
-// app.get('/api/recommended_items', (req, res) => {
-//     res.json(nearestNeighbors);
-// })
-
 app.listen(port, () => console.log(`Server listening on port ${port}`));
+
+
+module.exports = {app};
+// Dont use file, just use temp variable cuz realistically different users might want recommendation and then so many json files will be created
