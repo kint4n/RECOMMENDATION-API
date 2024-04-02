@@ -20,7 +20,6 @@ function calculateEuclideanDistance(clothes1, clothes2) {
         }
         else {
             // If attributes are the same 0, else +1 (The smaller the value, the similar the items)
-            // sigma += Math.pow(clothes1[attribute].toLowerCase() === clothes2[attribute].toLowerCase() ? 0 : 1, 2);
             sigma += Math.pow(clothes1[attribute] === clothes2[attribute] ? 0 : 1, 2);
         }     
     }
@@ -70,7 +69,6 @@ function getKNearestNeighbors(requestData) {
     const knnGraph = buildKNNGraph(dataset_clothes);
 
     const indexes = findIndexesByClothesID(requestData);
-    console.log(indexes);
     
     const nearestNeighbors = [];
 
@@ -85,6 +83,7 @@ function getKNearestNeighbors(requestData) {
         });
         return nearestNeighbors;
     }
+    // If > 1 item in shopping cart
     else {
         for(let i = 0; i < indexes.length; i++) {
             knnGraph[indexes[i]].forEach(item => {

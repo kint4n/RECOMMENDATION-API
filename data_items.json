@@ -1,81 +1,223 @@
-[
+[   
     {
-      "clothes_name": "Men's Denim Jacket",
-      "retailerName": "Zara",
-      "description": "Classic denim jacket for men",
-      "category": "Jackets",
-      "brand": "DenimCo",
-      "price": 200,
-      "gender": "Male",
-      "link": "src/path",
-      "clothes_ID": "01127_00"
-    },
-    {
-      "clothes_name": "Women's Denim Jacket",
-      "retailerName": "Zara",
-      "description": "Classic denim jacket for women",
-      "category": "Jackets",
-      "brand": "DenimCo",
+      "clothes_name": "Women's Red Long-sleeve T-Shirt",
+      "retailerName": "Adidas",
+      "description": "Classic long-sleeve t-shirt for women",
+      "category": "T-shirt",
+      "brand": "Adidas",
       "price": 200,
       "gender": "Female",
       "link": "src/path",
-      "clothes_ID": "06322_00"
+      "clothes_ID": "00008_00"
     },
     {
-      "clothes_name": "Men's skinny jeans",
+      "clothes_name": "Women's Black Graphic T-shirt",
+      "retailerName": "Lee",
+      "description": "classic graphic t-shirt for women",
+      "category": "T-shirt",
+      "brand": "Lee",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00057_00"
+    },
+    {
+      "clothes_name": "Women's White Graphic T-shirt",
+      "retailerName": "Champion",
+      "description": "classic graphic t-shirt for women",
+      "category": "T-shirt",
+      "brand": "Champion",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00075_00"
+    },
+    {
+      "clothes_name": "Women's Grey Plain Long-sleeve T-shirt",
+      "retailerName": "Polo",
+      "description": "classic long-sleeve t-shirt for women",
+      "category": "T-shirt",
+      "brand": "Polo",
+      "price": 200,
+      "gender": "Women",
+      "link": "src/path",
+      "clothes_ID": "00094_00"
+    },
+    {
+      "clothes_name": "Women's Black Graphic T-shirt",
+      "retailerName": "Levi",
+      "description": "Classic graphic t-shirt for women",
+      "category": "T-shirt",
+      "brand": "Levi",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00278_00"
+    },
+    {
+      "clothes_name": "Women's Pink Long-sleeve Running Tracksuit",
+      "retailerName": "Lululemon",
+      "description": "long-sleeve running tracksuit for women",
+      "category": "Tracksuit",
+      "brand": "Lululemon",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00463_00"
+    },
+    {
+      "clothes_name": "Women's Red Sleeveless T-shirt",
       "retailerName": "Uniqlo",
-      "description": "Skinny jeans for men",
-      "category": "Jeans",
-      "brand": "DenimCo",
-      "price": 200,
-      "gender": "Male",
-      "link": "src/path",
-      "clothes_ID": "00007_00"
-    },
-    {
-      "clothes_name": "Air Jordans",
-      "retailerName": "Nike",
-      "description": "Classic Air Jordans",
-      "category": "Shoes",
-      "brand": "Jordan",
-      "price": 200,
-      "gender": "Unisex",
-      "link": "src/path",
-      "clothes_ID": "01172_00"
-    },
-    {
-      "clothes_name": "Men's Running Jacket",
-      "retailerName": "Lining",
-      "description": "Classic denim jacket for men",
-      "category": "Jackets",
-      "brand": "DenimCo",
-      "price": 200,
-      "gender": "Male",
-      "link": "src/path",
-      "clothes_ID": "01214_00"
-    },
-    {
-      "clothes_name": "Men's black long-sleeve t-shirt",
-      "retailerName": "Walmart",
-      "description": "Classic long-sleeved t-shirt for men",
-      "category": "T-shirt",
-      "brand": "Uniqlo",
-      "price": 200,
-      "gender": "Male",
-      "link": "src/path",
-      "clothes_ID": "02299_00"
-    },
-    {
-      "clothes_name": "Women's black long-sleeve t-shirt",
-      "retailerName": "Walmart",
-      "description": "Classic long-sleeved t-shirt for women",
+      "description": "Sleeveless t-shirt for women",
       "category": "T-shirt",
       "brand": "Uniqlo",
       "price": 200,
       "gender": "Female",
       "link": "src/path",
-      "clothes_ID": "06211_00"
-    }
-    
+      "clothes_ID": "00664_00"
+    },
+    {
+      "clothes_name": "Women's Black Long-sleeve turtle neck",
+      "retailerName": "H&M",
+      "description": "long-sleeve turtle neck for women",
+      "category": "Turtle neck",
+      "brand": "H&M",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00683_00"
+    },
+    {
+      "clothes_name": "Women's Black Long-sleeve turtle neck",
+      "retailerName": "Uniqlo",
+      "description": "long-sleeve turtle neck for women",
+      "category": "Turtle neck",
+      "brand": "Uniqlo",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00684_00"
+    },
+    {
+      "clothes_name": "Women's Purple Sleeveless T-shirt",
+      "retailerName": "Even&Odd",
+      "description": "Sleeveless t-shirt for women",
+      "category": "T-shirt",
+      "brand": "Even&Odd",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00690_00"
+    },
+    {
+      "clothes_name": "Women's White Graphic Tanktop",
+      "retailerName": "Comma",
+      "description": "Graphic Tanktop for Women",
+      "category": "Tanktop",
+      "brand": "Comma",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00709_00"
+    },
+    {
+      "clothes_name": "Women's Red Swimsuit",
+      "retailerName": "Lululemon",
+      "description": "Swimsuit for women",
+      "category": "Swimsuit",
+      "brand": "Lululemon",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00736_00"
+    },
+    {
+      "clothes_name": "Women's White Graphic T-shirt",
+      "retailerName": "Isari",
+      "description": "Graphic T-shirt for women",
+      "category": "T-shirt",
+      "brand": "Isari",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00739_00"
+    },
+    {
+      "clothes_name": "Women's Blue Graphic T-shirt",
+      "retailerName": "Zara",
+      "description": "Graphic T-shirt for Women",
+      "category": "T-shirt",
+      "brand": "Zara",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00765_00"
+    },
+    {
+      "clothes_name": "Women's Black Tanktop",
+      "retailerName": "Zara",
+      "description": "Tanktop for women",
+      "category": "Tanktop",
+      "brand": "Zara",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00785_00"
+    },
+    {
+      "clothes_name": "Women's Black Plain T-shirt",
+      "retailerName": "Flippa K",
+      "description": "plain t-shirt for women",
+      "category": "T-shirt",
+      "brand": "Flippa K",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00789_00"
+    },
+    {
+      "clothes_name": "Women's Green Long-sleeve T-shirt",
+      "retailerName": "Polo",
+      "description": "Long-sleeve t-shirt for women",
+      "category": "T-shirt",
+      "brand": "Polo",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00821_00"
+    },
+    {
+      "clothes_name": "Women's White Graphic T-shirt",
+      "retailerName": "Columbia",
+      "description": "Graphic t-shirt for women",
+      "category": "T-shirt",
+      "brand": "Columbia",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00824_00"
+    },
+    {
+      "clothes_name": "Women's Black Swimsuit",
+      "retailerName": "Lululemon",
+      "description": "Swimsuit for women",
+      "category": "T-shirt",
+      "brand": "Lululemon",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00828_00"
+    },
+    {
+      "clothes_name": "Women's Pink Plain Sweater",
+      "retailerName": "Callister",
+      "description": "plain sweater for women",
+      "category": "Sweater",
+      "brand": "Callister",
+      "price": 200,
+      "gender": "Female",
+      "link": "src/path",
+      "clothes_ID": "00884_00"
+    }  
   ]
   
